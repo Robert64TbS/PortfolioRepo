@@ -1,11 +1,803 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Roberth Torres - Portafolio</title>
+
+  <!--
+    - favicon
+  -->
+  <link id="favicon" rel="icon" type="image/png" href="./assets/images/cafe.png">
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <h1>Hola Mundo</h1>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/avatar.png" alt="Roberth Torres" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Roberth Torres">Roberth Torres Solano</h1>
+
+          <p class="title">Técnico Ing. de Software con IA</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Mostrar Contactos</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Correo Electrónico</p>
+
+              <a href="mailto:tsroberth64@gmail.com" class="contact-link">tsroberth64@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Teléfono</p>
+
+              <a href="tel:+51936114533" class="contact-link">+51 936 114 533</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Cumpleaños</p>
+
+              <time datetime="1982-06-23">Agosto 28, 2004</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Ubicación</p>
+
+              <address>Los Olivos, Lima, Perú</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link active" data-nav-link="perfil">Perfil</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link="resumen">Resumen</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link="portafolio">Portafolio</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link="contacto">Contacto</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about active" data-page="perfil">
+
+        <header>
+          <h2 class="h2 article-title">Acerca de Mí</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            Soy un técnico profesional de 20 años, dedicado a utilizar todos los recursos en línea para encontrar
+            soluciones innovadoras y eficaces a problemas complejos en programas y aplicaciones
+          </p>
+
+          <p>
+            Mi compromiso con la puntualidad y la calidad en la entrega de trabajos es una de mis principales
+            fortalezas. Además, tengo una gran capacidad de adaptación al entorno laboral, lo que me permite enfrentar
+            desafíos con agilidad y mantener un enfoque orientado a resultados.
+          </p>
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">¿Qué estoy haciendo?</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Desarrollador Web</h4>
+
+                <p class="service-item-text">
+                  Uso tecnologías y servicios modernos para crear sitios web y aplicaciones web.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-design.svg
+                " alt="design icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Bases de Datos</h4>
+
+                <p class="service-item-text">
+                  Diseño y gestión de bases de datos eficientes y seguras para cualquier aplicación.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Desarrollo Móvil</h4>
+
+                <p class="service-item-text">
+                  Empezando a desarrollar aplicaciones móviles para Android, utilizando tecnologías como React Native.
+                </p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials
+        -->
+
+        <section class="testimonials">
+
+          <h3 class="h3 testimonials-title">Testimonios</h3>
+
+          <ul class="testimonials-list has-scrollbar">
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-hombre.jpg" alt="Cristian Vega" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Cristian Vega</h4>
+
+                <p style="display: none;" data-testimonials-time>15 Nov, 2024</p>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Roberth fue contratado para desarrollar un sistema de gestión de transporte el cual incluía la
+                    creación de una base de datos y la implementación de servicios para guardar archivos, en el cual se
+                    desempeñó
+                    y adaptó al proyecto con gran facilidad.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-mujer.jpg" alt="Carola Gamio" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Carola Gamio</h4>
+
+                <p style="display: none;" data-testimonials-time>29 Nov, 2024</p>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Roberth nos ayudó a crear un sistema de registro de compras, con la generación de reportes en PDF,
+                    control de acceso, gestión de proveedores y productos, y un dashboard de estadísticas. Su trabajo
+                    fue excepcional y cumplió con todas nuestras expectativas.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials modal
+        -->
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/avatar-hombre.jpg" alt="Daniel lewis" width="80" data-modal-img>
+              </figure>
+
+              <img src="./assets/images/icon-quote.svg" alt="quote icon">
+            </div>
+
+            <div class="modal-content">
+
+              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
+
+              <time data-modal-time>14 June, 2021</time>
+
+              <div data-modal-text>
+                <p>
+                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                  lot of experience
+                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                  consectetur adipiscing
+                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                </p>
+              </div>
+
+            </div>
+
+          </section>
+
+        </div>
+
+      </article>
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resumen">
+
+        <header>
+          <h2 class="h2 article-title">Resumen</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Educación</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Universidad Tecnológica del Perú (UTP)</h4>
+
+              <span>2024 — 1er Ciclo (Cursos Convalidados)</span>
+
+              <p class="timeline-text">
+                Inicié estudios en Ingeniería de Software en la UTP, convalidando varios cursos gracias a mi formación
+                previa en SENATI. Esta etapa me permitió fortalecer conocimientos clave en fundamentos de ingeniería de
+                software.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Servicio Nacional de Adiestramiento en Trabajo Industrial (SENATI)</h4>
+
+              <span>2020 — 2023</span>
+
+              <p class="timeline-text">
+                Técnico titulado de SENATI, institución reconocida por su enfoque práctico. Durante mi formación adquirí
+                experiencia en el desarrollo de aplicaciones web,
+                gestión de bases de datos y proyectos de software, trabajando con metodologías ágiles y tecnologías
+                modernas.
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="cog-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Experiencia</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+              <span>PROEMCO S.A.C.</span>
+              <h4 class="h4 timeline-item-title">Desarrollador de Software Independiente</h4>
+              <span>Oct 2024 — Nov 2024</span>
+
+              <p class="timeline-text">
+                Desarrollé un sistema de compras con generación de reportes en PDF, control de acceso, gestión de
+                proveedores y productos, y dashboard de estadísticas, implementado en el servidor local de la empresa
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <span>TRANSCORP INDUSTRIAL S.A.C.</span>
+              <h4 class="h4 timeline-item-title">Asistente de Sistemas y Monitoreo</h4>
+
+              <span>Sep 2024 — Nov 2024</span>
+
+              <p class="timeline-text">
+                Responsable de implementar un módulo para validar datos de archivos TXT del sistema SIRE de la SUNAT y
+                mejorar módulos existentes en el ERP POINTER.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+              <span>EVOLUCIÓN PERÚ</span>
+              <h4 class="h4 timeline-item-title">Programador Junior</h4>
+
+              <span>Mar 2024 — Jul 2024</span>
+
+              <p class="timeline-text">
+                Encargado del desarrollo de un sistema para Call Center de Crediscotia, y el desarrollo de la base de
+                datos.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+              <span>Byma-ve Innovation</span>
+              <h4 class="h4 timeline-item-title">Programador Backend</h4>
+
+              <span>Dec 2023 — Nov 2024</span>
+
+              <p class="timeline-text">
+                Responsable en el desarrollo backend, para el sistema Bytransload 2.0, con el desarrollo de la base de
+                datos e implementación de bucles en amazon S3 para archivos.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+              <span>Byma-ve Innovation</span>
+              <h4 class="h4 timeline-item-title">Programador Backend</h4>
+
+              <span>Feb 2023 — Sep 2023</span>
+
+              <p class="timeline-text">
+                Responsable de liderar el desarrollo backend del sistema de gestión de transporte Bytransload,
+                incluyendo la creación y optimización de la base de datos. Implementé la API de Google Drive para
+                mejorar la integración y asegurar la eficiencia y funcionalidad del sistema.
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+
+        <!--
+          - skills
+        -->
+
+        <section class="clients">
+
+          <h3 class="h3 clients-title">Skills</h3>
+
+          <div class="skills-list has-scrollbar">
+
+            <div class="skill-item">
+              <img src="assets/images/logos/logo-html5.svg" alt="HTML5" title="HTML5" class="skill-icon">
+            </div>
+            <div class="skill-item">
+              <img src="assets/images/logos/logo-css3.svg" alt="CSS3" title="CSS3" class="skill-icon">
+            </div>
+            <div class="skill-item">
+              <img src="assets/images/logos/logo-php.svg" alt="PHP" title="PHP" class="skill-icon">
+            </div>
+            <div class="skill-item">
+              <img src="assets/images/logos/logo-js.svg" alt="JavaScript" title="JavaScript" class="skill-icon">
+            </div>
+            <div class="skill-item">
+              <img src="assets/images/logos/logo-java.svg" alt="Java" title="Java" class="skill-icon">
+            </div>
+
+            <!-- <hr class="skills-divider"> -->
+
+            <div class="skill-item">
+              <img src="assets/images/logos/logo-python.svg" alt="Python" title="Python" class="skill-icon">
+            </div>
+            <div class="skill-item">
+              <img src="assets/images/logos/logo-react.svg" alt="React" title="React" class="skill-icon">
+            </div>
+            <div class="skill-item">
+              <img src="assets/images/logos/logo-laravel.svg" alt="Laravel" title="Laravel" class="skill-icon">
+            </div>
+            <div class="skill-item">
+              <img src="assets/images/logos/logo-mysql.svg" alt="MySQL" title="MySQL" class="skill-icon">
+            </div>
+            <div class="skill-item">
+              <img src="assets/images/logos/logo-office.svg" alt="Office" title="Office" class="skill-icon">
+            </div>
+
+
+          </div>
+
+        </section>
+      </article>
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="portafolio">
+
+        <header>
+          <h2 class="h2 article-title">Portafolio</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>Todos</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Desarrollo Web</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Aplicaciones</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Seleccionar Categoria</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>Todos</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Desarrollo Web</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Aplicaciones</button>
+              </li>
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="desarrollo web">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-1.jpg" alt="finance" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Sistema de Registro de Compras</h3>
+
+                <p class="project-category">Desarrollo Web</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="desarrollo web">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-2.png" alt="orizon" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Sistema de Gestión de Transporte</h3>
+
+                <p class="project-category">Desarrollo Web</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="desarrollo web">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-3.jpg" alt="fundo" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Sistema de Inventario con Sucursales</h3>
+
+                <p class="project-category">Desarrollo Web</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="desarrollo web">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-3.jpg" alt="fundo" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Ecommerce</h3>
+
+                <p class="project-category">Desarrollo Web</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="aplicaciones">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-4.png" alt="brawlhalla" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Convertidor MP3</h3>
+
+                <p class="project-category">Aplicaciones</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="aplicaciones">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-8.jpg" alt="task manager" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Administrador de Tareas</h3>
+
+                <p class="project-category">Aplicaciones</p>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contacto">
+
+        <header>
+          <h2 class="h2 article-title">Contacto</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62450.05468943215!2d-77.07382175!3d-11.9656097!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105ce21b6748c45%3A0xece5fa25a5e8c4d5!2sLos%20Olivos!5e0!3m2!1ses-419!2spe!4v1750864756664!5m2!1ses-419!2spe"
+              width="400" height="300" loading="lazy"></iframe>
+          </figure>
+        </section>
+
+        <section class="contact-form">
+
+          <h3 class="h3 form-title">Formulario de Contacto</h3>
+
+          <form method="post" class="form" data-form>
+
+            <div class="input-wrapper">
+              <input type="text" name="Nombre" class="form-input" placeholder="Nombre Completo" required
+                data-form-input>
+
+              <input type="email" name="Email" class="form-input" placeholder="Correo Electrónico" required
+                data-form-input>
+            </div>
+
+            <textarea name="Mensaje" class="form-input" placeholder="Tu Mensaje" required data-form-input></textarea>
+
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Enviar Mensaje</span>
+            </button>
+
+          </form>
+
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
 </body>
+
 </html>
