@@ -702,6 +702,24 @@ main {
   visibility: visible;
 }
 
+.modal-container .modal-content ul {
+  list-style: disc inside;
+  padding-left: 1.5em;
+}
+
+.modal-container .modal-content ul li {
+  color: var(--text-color, #fff);
+  position: relative;
+  margin-bottom: 0.5em;
+  list-style: disc;
+  display: list-item;
+}
+
+.modal-container .modal-content ul li::marker {
+  color: #FFD700;
+  font-size: 1.2em;
+}
+
 .overlay {
   position: fixed;
   top: 0;
@@ -2127,6 +2145,12 @@ textarea.form-input::-webkit-resizer {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+  }
+
+  .contact-link:hover {
+    color: var(--orange-yellow-crayola);
+    text-decoration: underline;
+    transition: color 0.2s;
   }
 
   .contact-info :is(.contact-link, time, address) {
